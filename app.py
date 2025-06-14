@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestRegressor
 st.title("📈 Sales Prediction App")
 st.write("Predict product sales based on advertising budgets using Random Forest Regression.")
 
-
+df=pd.read_csv('advertising.csv')
 
 X = df[['TV', 'Radio', 'Newspaper']]
 y = df['Sales']
